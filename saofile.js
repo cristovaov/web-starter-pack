@@ -37,6 +37,14 @@ module.exports = {
         store: true
       },
       {
+        name: 'frontend',
+        message: 'Choose your frontend flavour:',
+        type: 'list',
+        choices: ['blank'],
+        default: 'blank',
+        filter: val => val.toLowerCase()
+      },
+      {
         name: 'gitRepo',
         type: 'confirm',
         message: 'Initialize a git repo?',
@@ -58,7 +66,8 @@ module.exports = {
     {
       type: 'move',
       patterns: {
-        gitignore: '.gitignore'
+        gitignore: '.gitignore',
+        '_package.json': 'package.json'
       }
     }
   ],
@@ -66,11 +75,11 @@ module.exports = {
     if (this.answers.gitRepo) {
       this.gitInit();
     }
-    
+
     if (this.answers.installPackages) {
       await this.npmInstall();
     }
-    
+
     this.showProjectTips();
   }
 };
