@@ -1,12 +1,12 @@
-const path = require("path");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
-  entry: "./assets/js/index.js",
+  entry: './assets/js/index.js',
   output: {
-    filename: "js/bundle.js",
-    path: path.resolve(__dirname, "static")
+    filename: 'js/bundle.js',
+    path: path.resolve(__dirname, 'static')
   },
   module: {
     rules: [
@@ -17,16 +17,16 @@ module.exports = {
       {
         test: /\.(s*)css$/,
         use: [
-           MiniCssExtractPlugin.loader,
-          "css-loader?url=false",
-          "sass-loader"
+          MiniCssExtractPlugin.loader,
+          'css-loader?url=false',
+          'sass-loader'
         ]
       }
     ]
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "css/[name].css"
+      filename: 'css/[name].css'
     }),
     new OptimizeCSSAssetsPlugin({
       cssProcessorPluginOptions: {
