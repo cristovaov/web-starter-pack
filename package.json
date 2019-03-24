@@ -8,9 +8,11 @@
   },
   "author": "cristovaov <> (https://apleasantview.com)",
   "license": "MIT",
+  "bin": "bin/cli.js",
   "files": [
+    "bin/cli.js",
     "saofile.js",
-    "template"
+    "template/"
   ],
   "scripts": {
     "test": "ava"
