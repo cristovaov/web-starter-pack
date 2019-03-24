@@ -1,41 +1,54 @@
-const superb = require('superb')
+const superb = require('superb');
 
 module.exports = {
   prompts() {
     return [
       {
         name: 'name',
-        message: 'What is the name of the new project',
+        message: 'Project name:',
         default: this.outFolder,
         filter: val => val.toLowerCase()
       },
       {
         name: 'description',
-        message: 'How would you descripe the new project',
-        default: `my ${superb()} project`
+        message: 'Project description:',
+        default: `My ${superb()} web project`
       },
       {
-        name: 'username',
-        message: 'What is your GitHub username',
-        default: this.gitUser.username || this.gitUser.name,
-        filter: val => val.toLowerCase(),
+        name: 'author',
+        message: 'Author name:',
+        default:
+          this.gitUser.username.toLowerCase() ||
+          this.gitUser.name.toLowerCase(),
         store: true
       },
       {
         name: 'email',
-        message: 'What is your email?',
+        message: 'Author email:',
         default: this.gitUser.email,
         store: true
       },
       {
         name: 'website',
-        message: 'The URL of your website',
+        message: 'Website URL:',
         default({ username }) {
-          return `github.com/${username}`
+          return `github.com/${username}`;
         },
         store: true
+      },
+      {
+        name: 'gitRepo',
+        type: 'confirm',
+        message: 'Initialize a git repo?',
+        default: false
+      },
+      {
+        name: 'installPackages',
+        type: 'confirm',
+        message: 'Install the node packages?',
+        default: true
       }
-    ]
+    ];
   },
   actions: [
     {
@@ -50,8 +63,14 @@ module.exports = {
     }
   ],
   async completed() {
-    this.gitInit()
-    await this.npmInstall()
-    this.showProjectTips()
+    if (this.answers.gitRepo) {
+      this.gitInit();
+    }
+    
+    if (this.answers.installPackages) {
+      await this.npmInstall();
+    }
+    
+    this.showProjectTips();
   }
-}
+};
