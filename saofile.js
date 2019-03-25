@@ -40,7 +40,7 @@ module.exports = {
         name: 'frontend',
         message: 'Choose your frontend flavour:',
         type: 'list',
-        choices: ['blank'],
+        choices: ['blank', 'Bulma'],
         default: 'blank',
         filter: val => val.toLowerCase()
       },

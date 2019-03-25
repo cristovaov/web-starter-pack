@@ -25,3 +25,5 @@
     height: auto;
   }
 }
+
+<% if ( frontend === "bulma"){ %>@import "~bulma/bulma"; <% } %>
