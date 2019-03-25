@@ -4,7 +4,15 @@
 
 ## Usage
 
-[TODO]
+With `npx` (recommended):
+```bash
+npx web-starter-pack <project-folder>
+```
+With `npm <= 5.1`:
+```bash
+npm install -g web-starter-pack
+web-starter-pack <project-folder>
+```
 
 ## License
 
