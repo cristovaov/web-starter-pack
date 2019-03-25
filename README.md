@@ -1,4 +1,4 @@
-# Web Starter Pack
+# web-starter-pack
 
 > A cli to start new web projects in seconds
 
