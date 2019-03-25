@@ -12,3 +12,6 @@ All notable changes to this project will be documented in this file. See [standa
 
 
 # 0.12.0 (2019-03-25)
+
+
+### Initial npm release
