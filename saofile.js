@@ -81,5 +81,19 @@ module.exports = {
     }
 
     this.showProjectTips();
+
+    const projectDir = this.outDir !== process.cwd();
+    const projectFolder = () => {
+      if (projectDir) {
+        console.log(`\tcd ${this.outFolder}`);
+      }
+    };
+
+    console.log(this.chalk.bold(`\n  Next steps:`));
+    projectFolder();
+    if (!this.answers.installPackages) {
+      console.log('\tnpm install');
+    }
+    console.log('\tnpm run build\n\tnpm run server');
   }
 };
