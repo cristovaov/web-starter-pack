@@ -1,3 +1,5 @@
+![npm](https://img.shields.io/npm/v/web-starter-pack.svg?color=blue)
+
 # web-starter-pack
 
 > A cli to start new web projects in seconds
