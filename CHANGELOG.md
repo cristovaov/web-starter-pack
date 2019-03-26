@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.4](https://github.com/cristovaov/web-starter-pack/compare/v0.12.3...v0.12.4) (2019-03-26)
+
+
+### Bug Fixes
+
+* **template:** Remove mode flag from webpack command ([f20392a](https://github.com/cristovaov/web-starter-pack/commit/f20392a))
+
+
+
 ## [0.12.3](https://github.com/cristovaov/web-starter-pack/compare/v0.12.2...v0.12.3) (2019-03-26)
 
 
