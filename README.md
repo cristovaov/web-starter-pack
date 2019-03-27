@@ -28,7 +28,7 @@ You have the choice of the following front-end frameworks:
 * *...more to come!*
 
 ## Options
-You will be asked if you'd like to initialize a git repo (default: No) and have the npm packages already installed (default: Yes).
+You will be asked if you'd like to initialize a git repo (default: No) and have the npm packages installed for you (default: Yes).
 
 ## Build & Server
 After your choices are confirmed, the cli will setup your chosen framework with default configurations for webpack and an express.js server. Follow-up commands will be shown on-screen.
