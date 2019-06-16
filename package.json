@@ -1,6 +1,6 @@
 {
   "name": "web-starter-pack",
-  "version": "0.12.4",
+  "version": "0.12.5",
   "description": "A cli to start new web projects in seconds",
   "repository": {
     "url": "cristovaov/web-starter-pack",

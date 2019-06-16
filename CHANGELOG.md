@@ -1,6 +1,25 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [0.12.5](https://github.com/cristovaov/web-starter-pack/compare/v0.12.4...v0.12.5) (2019-06-16)
+
+
+### Build System
+
+* Update npm dependencies to latest ([2e355bd](https://github.com/cristovaov/web-starter-pack/commit/2e355bd))
+
+
+### Features
+
+* **template:** Update npm dependencies to latest ([0056f01](https://github.com/cristovaov/web-starter-pack/commit/0056f01))
+
+
+### Docs
+
+* **readme**: Fix wording ([12f9b58](https://github.com/cristovaov/web-starter-pack/commit/12f9b58))
+
+
 
 ## [0.12.4](https://github.com/cristovaov/web-starter-pack/compare/v0.12.3...v0.12.4) (2019-03-26)
 
