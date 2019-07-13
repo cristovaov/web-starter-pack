@@ -1,4 +1,5 @@
-![npm](https://img.shields.io/npm/v/web-starter-pack.svg?color=blue)
+[![npm](https://img.shields.io/npm/v/web-starter-pack.svg?color=blue)](https://www.npmjs.com/package/web-starter-pack) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/cristovaov/web-starter-pack/master/template/base/static/img/web-starter-pack.png" width="120" height="120" alt="web-starter-pack logo">
 </p>
