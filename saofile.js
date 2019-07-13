@@ -45,6 +45,14 @@ module.exports = {
         filter: val => val.toLowerCase()
       },
       {
+        name: 'engine',
+        message: 'Choose an engine:',
+        type: 'list',
+        choices: ['none', 'Eleventy', 'Express'],
+        default: 'none',
+        filter: val => val.toLowerCase()
+      },
+      {
         name: 'gitRepo',
         type: 'confirm',
         message: 'Initialize a git repo?',
@@ -58,19 +66,59 @@ module.exports = {
       }
     ];
   },
-  actions: [
-    {
+  templateData() {
+    const serverEngine = this.answers.engine;
+    let serverCmd;
+    switch (serverEngine) {
+      case 'express': {
+        serverCmd = 'node server.js';
+        break;
+      }
+      case 'eleventy': {
+        serverCmd = 'eleventy --serve';
+        break;
+      }
+      default: {
+        serverCmd = serverEngine;
+      }
+    }
+
+    return {
+      serverCmd
+    };
+  },
+  actions() {
+    const actions = [
+      {
+        type: 'add',
+        files: '**',
+        templateDir: 'template/base'
+      }
+    ];
+
+    if (this.answers.engine !== 'none') {
+      actions.push({
+        type: 'add',
+        files: '**',
+        templateDir: `template/engines/${this.answers.engine}`
+      });
+    }
+
+    actions.push({
       type: 'add',
-      files: '**'
-    },
-    {
+      files: '*'
+    });
+
+    actions.push({
       type: 'move',
       patterns: {
         gitignore: '.gitignore',
         '_package.json': 'package.json'
       }
-    }
-  ],
+    });
+
+    return actions;
+  },
   async completed() {
     if (this.answers.gitRepo) {
       this.gitInit();
@@ -91,9 +139,15 @@ module.exports = {
 
     console.log(this.chalk.bold(`\n  Next steps:`));
     projectFolder();
+    
     if (!this.answers.installPackages) {
       console.log('\tnpm install');
     }
-    console.log('\tnpm run build\n\tnpm run server');
+
+    console.log('\tnpm run build')
+
+    if (this.answers.engine !== 'none') {
+      console.log('\tnpm run server');
+    }
   }
 };

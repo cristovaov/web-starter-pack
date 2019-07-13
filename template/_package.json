@@ -5,16 +5,17 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "server": "node server.js",
+    "server": "<%= serverCmd %>",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "<%= author %> <<%= email %>> (<%= website %>)",
   "license": "MIT",
   "private": true,
-  "devDependencies": {<% if (frontend === "bulma") { %>
+  "devDependencies": {<% if (engine === "eleventy") { %>
+    "@11ty/eleventy": "^0.8.3",<% } if (frontend === "bulma") { %>
     "bulma": "^0.7.5",<% } %>
-    "css-loader": "^3.0.0",
-    "express": "^4.17.1",
+    "css-loader": "^3.0.0",<% if (engine === "express") { %>
+    "express": "^4.17.1",<% } %>
     "mini-css-extract-plugin": "^0.7.0",
     "node-sass": "^4.12.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
