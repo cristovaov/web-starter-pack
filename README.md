@@ -9,7 +9,7 @@
 
 `web-starter-pack` will scaffold a web project for you, with sensible defaults. The joy of traditional web development and modern tooling, without the headache! 
 
-## Usage
+## Usage ⌨️
 
 With `npx` (recommended):
 ```bash
@@ -27,11 +27,19 @@ You have the choice of the following front-end frameworks:
 * [Bulma](https://bulma.io)
 * *...more to come!*
 
-## Options
+## Engines 🌀
+What will power your site?
+* none (no powers!)
+* [Eleventy](https://www.11ty.io/)
+* [Express](https://expressjs.com/)
+
+## Options ✔️
 You will be asked if you'd like to initialize a git repo (default: No) and have the npm packages installed for you (default: Yes).
 
-## Build & Server
-After your choices are confirmed, the cli will setup your chosen framework with default configurations for webpack and an express.js server. Follow-up commands will be shown on-screen.
+## Build 🔧
+After your choices are confirmed, the cli will setup your chosen options. The template comes with default [webpack](https://webpack.js.org/) configurations for building your SASS/(S)CSS and JavaScript. 
+
+Follow-up commands will be shown on-screen!
 
 ## License
 
