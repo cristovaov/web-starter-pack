@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.13.1](https://github.com/cristovaov/web-starter-pack/compare/v0.13.0...v0.13.1) (2019-07-13)
+
+
+### Bug Fixes
+
+* **readme:** Fix logo path to new location ([644b8fd](https://github.com/cristovaov/web-starter-pack/commit/644b8fd))
+
+
+
 ## [0.13.0](https://github.com/cristovaov/web-starter-pack/compare/v0.12.5...v0.13.0) (2019-07-13)
 
 
