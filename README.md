@@ -1,6 +1,6 @@
 ![npm](https://img.shields.io/npm/v/web-starter-pack.svg?color=blue)
 <p align="center">
-  <img src="https://raw.githubusercontent.com/cristovaov/web-starter-pack/master/template/static/img/web-starter-pack.png" width="120" height="120" alt="web-starter-pack logo">
+  <img src="https://raw.githubusercontent.com/cristovaov/web-starter-pack/master/template/base/static/img/web-starter-pack.png" width="120" height="120" alt="web-starter-pack logo">
 </p>
 
 # web-starter-pack
