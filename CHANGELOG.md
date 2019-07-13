@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.13.0](https://github.com/cristovaov/web-starter-pack/compare/v0.12.5...v0.13.0) (2019-07-13)
+
+
+### Build System
+
+* Update npm dependencies to latest ([d3f464e](https://github.com/cristovaov/web-starter-pack/commit/d3f464e))
+
+
+### Features
+
+* Introduce the 'engine' option ([ff26ced](https://github.com/cristovaov/web-starter-pack/commit/ff26ced))
+
+
+
 ### [0.12.5](https://github.com/cristovaov/web-starter-pack/compare/v0.12.4...v0.12.5) (2019-06-16)
 
 
