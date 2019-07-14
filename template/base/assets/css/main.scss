@@ -33,3 +33,4 @@
 }
 
 <% if ( frontend === "bulma"){ %>@import "~bulma/bulma"; <% } %>
+<% if ( frontend === "normalize"){ %>@import "~normalize.css/normalize.css"; <% } %>
