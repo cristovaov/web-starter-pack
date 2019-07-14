@@ -12,9 +12,15 @@
     'Segoe UI Symbol', 'Noto Color Emoji';
 
   .content {
-    max-width: 50%;
     margin-top: 45px;
     text-align: center;
+
+    &>h1 {
+      font-size: 3em;
+    }
+    &>p {
+      font-size: 1.5em;
+    }
   }
 
   img.wsp__logo {
