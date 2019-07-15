@@ -1,37 +1,15 @@
-const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const merge = require('webpack-merge');
 
-module.exports = {
-  entry: './assets/js/index.js',
-  output: {
-    filename: 'js/bundle.js',
-    path: path.resolve(__dirname, 'static')
-  },
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /node-modules/
-      },
-      {
-        test: /\.(s*)css$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          'css-loader?url=false',
-          'sass-loader'
-        ]
-      }
-    ]
-  },
-  plugins: [
-    new MiniCssExtractPlugin({
-      filename: 'css/[name].css'
-    }),
-    new OptimizeCSSAssetsPlugin({
-      cssProcessorPluginOptions: {
-        preset: ['default', { discardComments: { removeAll: true } }]
-      }
-    })
-  ]
+// Load our common webpack configuration here.
+const common = require('./build/webpack.common.js');
+
+// Merge common configuration with dev or prod configuration (default: prod).
+module.exports = (env, argv) => {
+  let mode = 'prod';
+  if (argv !== 'production') {
+    mode = 'dev';
+  }
+
+  const config = require(`./build/webpack.${mode}.js`);
+  return merge(common, config);
 };
