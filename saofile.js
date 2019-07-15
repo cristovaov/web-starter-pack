@@ -144,7 +144,7 @@ module.exports = {
       console.log('\tnpm install');
     }
 
-    console.log('\tnpm run build')
+    console.log('\tnpm run build | npm run start (dev)')
 
     if (this.answers.engine !== 'none') {
       console.log('\tnpm run server');
