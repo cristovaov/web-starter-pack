@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.14.0](https://github.com/cristovaov/web-starter-pack/compare/v0.13.1...v0.14.0) (2019-07-15)
+
+
+### Bug Fixes
+
+* **template/base:** Adjust font-size ([218e9ff](https://github.com/cristovaov/web-starter-pack/commit/218e9ff))
+
+
+### Build System
+
+* Configure changelog sections to write and set release message ([56615aa](https://github.com/cristovaov/web-starter-pack/commit/56615aa))
+
+
+### Documentation
+
+* **cli:** Output dev build command ([f2339f3](https://github.com/cristovaov/web-starter-pack/commit/f2339f3))
+* **readme:** Add conventional-commits shield, link npm shield to package ([cd16579](https://github.com/cristovaov/web-starter-pack/commit/cd16579))
+* **readme:** Add new features and minor document formatting ([fcc842e](https://github.com/cristovaov/web-starter-pack/commit/fcc842e))
+
+
+### Features
+
+* **template:** Add Normalize as frontend flavour ([d965373](https://github.com/cristovaov/web-starter-pack/commit/d965373))
+* **template:** Support webpack configuration by environment mode ([78e3b4d](https://github.com/cristovaov/web-starter-pack/commit/78e3b4d))
+* **template/base:** 'console.log' a message to confirm dev build ([b2ba5d5](https://github.com/cristovaov/web-starter-pack/commit/b2ba5d5))
+
+
+
 ### [0.13.1](https://github.com/cristovaov/web-starter-pack/compare/v0.13.0...v0.13.1) (2019-07-13)
 
 
