@@ -23,24 +23,27 @@ web-starter-pack <project-folder>
 ```
 
 ## Front-end flavours 🍦
+
 You have the choice of the following front-end frameworks:
 * blank (no front-end framework)
 * [Bulma](https://bulma.io)
+* [Normalize](https://necolas.github.io/normalize.css/)
 * *...more to come!*
 
 ## Engines 🌀
+
 What will power your site?
 * none (no powers!)
 * [Eleventy](https://www.11ty.io/)
 * [Express](https://expressjs.com/)
 
 ## Options ✔️
+
 You will be asked if you'd like to initialize a git repo (default: No) and have the npm packages installed for you (default: Yes).
 
 ## Build 🔧
-After your choices are confirmed, the cli will setup your chosen options. The template comes with default [webpack](https://webpack.js.org/) configurations for building your SASS/(S)CSS and JavaScript. 
 
-Follow-up commands will be shown on-screen!
+After the cli has setup your chosen options, follow-up commands will be shown on-screen! The template comes with separate [webpack](https://webpack.js.org/guides/production/) configurations for building your SASS/(S)CSS and JavaScript in development and production mode.
 
 ## License
 
