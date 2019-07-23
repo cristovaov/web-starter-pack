@@ -17,23 +17,7 @@ module.exports = {
       {
         name: 'author',
         message: 'Author name:',
-        default:
-          this.gitUser.username.toLowerCase() ||
-          this.gitUser.name.toLowerCase(),
-        store: true
-      },
-      {
-        name: 'email',
-        message: 'Author email:',
-        default: this.gitUser.email,
-        store: true
-      },
-      {
-        name: 'website',
-        message: 'Website URL:',
-        default({ username }) {
-          return `github.com/${username}`;
-        },
+        default: '{gitUser.name}',
         store: true
       },
       {

@@ -9,7 +9,7 @@
     "start": "webpack --mode=development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "<%= author %> <<%= email %>> (<%= website %>)",
+  "author": "<%= author %>",
   "license": "MIT",
   "private": true,
   "devDependencies": {<% if (engine === "eleventy") { %>
