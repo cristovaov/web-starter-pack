@@ -4,4 +4,4 @@
 
 ## License
 
-MIT &copy; <%= author %>
+<%= author %>
