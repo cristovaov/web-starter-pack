@@ -21,7 +21,7 @@ module.exports = {
         store: true
       },
       {
-        name: 'frontend',
+        name: 'flavour',
         message: 'Choose your frontend flavour:',
         type: 'list',
         choices: ['blank', 'Bulma', 'Normalize'],

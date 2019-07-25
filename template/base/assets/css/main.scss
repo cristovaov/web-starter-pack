@@ -32,5 +32,5 @@
   }
 }
 
-<% if ( frontend === "bulma"){ %>@import "~bulma/bulma"; <% } %>
-<% if ( frontend === "normalize"){ %>@import "~normalize.css/normalize.css"; <% } %>
+<% if ( flavour === "bulma"){ %>@import "~bulma/bulma"; <% } %>
+<% if ( flavour === "normalize"){ %>@import "~normalize.css/normalize.css"; <% } %>

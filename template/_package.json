@@ -12,12 +12,12 @@
   "author": "<%= author %>",
   "private": true,
   "devDependencies": {<% if (engine === "eleventy") { %>
-    "@11ty/eleventy": "^0.8.3",<% } if (frontend === "bulma") { %>
+    "@11ty/eleventy": "^0.8.3",<% } if (flavour === "bulma") { %>
     "bulma": "^0.7.5",<% } %>
     "css-loader": "^3.0.0",<% if (engine === "express") { %>
     "express": "^4.17.1",<% } %>
     "mini-css-extract-plugin": "^0.7.0",
-    "node-sass": "^4.12.0",<% if (frontend === "normalize") { %>
+    "node-sass": "^4.12.0",<% if (flavour === "normalize") { %>
     "normalize.css": "^8.0.1",<% } %>
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "sass-loader": "^7.1.0",
