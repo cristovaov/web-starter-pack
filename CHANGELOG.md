@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.14.4](https://github.com/cristovaov/web-starter-pack/compare/v0.14.0...v0.14.4) (2019-11-02)
+
+
+### Miscellaneous Chores
+
+* Update dependencies ([d80d7f1](https://github.com/cristovaov/web-starter-pack/commit/d80d7f186055135bdd8adc74c3ac5490462492e2))
+
+
+### Tests
+
+* Messing around with tests ([dc6a11d](https://github.com/cristovaov/web-starter-pack/commit/dc6a11d68c297fc3e3b7c7925bb112c06b24acdb))
+
+
+### Code Refactoring
+
+* **template:** Remove email + website prompts ([1795465](https://github.com/cristovaov/web-starter-pack/commit/1795465bc08feb0dda3b79b952cd1937edc32da7))
+* **template:** Remove license mentions + file ([97e6e4a](https://github.com/cristovaov/web-starter-pack/commit/97e6e4adeb998123877e99845f7b20ac93c7be6b))
+* Rename frontend prompt to 'flavour' ([319d0ba](https://github.com/cristovaov/web-starter-pack/commit/319d0ba4793fb9805b5bd162a4d20382e8e63e1c))
+
 ## [0.14.0](https://github.com/cristovaov/web-starter-pack/compare/v0.13.1...v0.14.0) (2019-07-15)
 
 
